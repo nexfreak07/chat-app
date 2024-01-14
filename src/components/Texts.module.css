@@ -1,0 +1,13 @@
+.text-heading{
+    margin-bottom: 2%;
+    color: #6FA5FF;
+ 
+}
+
+.text-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+}

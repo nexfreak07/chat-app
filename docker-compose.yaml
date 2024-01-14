@@ -1,0 +1,24 @@
+version: '3'
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - firebase
+
+  firebase:
+    image: "firebase/emulators:latest"
+    ports:
+      - "4000:4000"  # Adjust the port as needed
+      - "5000:5000"  # Adjust the port as needed
+    environment:
+      - FIREBASE_AUTH_EMULATOR_HOST=firebase:9099
+      - FIRESTORE_EMULATOR_HOST=firebase:8080
+    networks:
+      - backend
+
+networks:
+  backend:

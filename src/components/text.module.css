@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@1,12..72,200&display=swap');
+.text{
+    color: #e6e6fa;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    justify-content: center;
+    text-align: left;
+    
+}
+.text-font{
+    font-family: 'Texturina', serif;
+}
+
+.message{
+    margin: 1%;
+    padding: 1%;
+}
+.user{
+    color: #ffb97c;
+}

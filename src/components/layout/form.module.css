@@ -1,0 +1,32 @@
+/* Your existing styles */
+
+.form-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+    position: absolute;
+    top: 85%;
+    right: 35%;
+}
+  
+.input-field,
+.button-field {
+    margin-top: 10px; /* Adjust as needed for spacing */
+    margin-left: 2%;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 780px) {
+    .form-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start;
+        right: 0; /* Adjust right positioning */
+    }
+
+    .button-field {
+        margin-left: 2%; /* Reset margin-left for vertical stacking */
+        margin-top: 10px; /* Adjust spacing if needed */
+    }
+}
